@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;/*aligns awsesom fonts with text */
+    box-sizing: border-box;
+  }
+
+  
+body {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#wrapper{
+    border: 1px solid blue;
+    margin: auto 0;
+    text-align:center;
+    background-color: lightsalmon;
+    height: auto;
+    border-radius:3px;
+    width:450px;
+}
+
+#quote-box{
+    display: flex;
+    flex-direction: column;
+   
+    width: 450px;
+}
+
+
+
+.quote-text{
+    height: 150px;
+    font-weight: bold;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    height: auto
+}
+
+.quote-author{
+    height: 25px;
+    text-align: right;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.buttons{
+    height: 50px;
+    display: flex;
+}
+
+.button {
+    font-size: 32px;
+    color: blue;
+}
+
+#bstart {
+    align-items: left;
+    margin-left:10px;
+}
+
+#bend{
+    font-size:14px;
+    align-self: right;
+    margin-left: 240px;
+}
+
+#new-quote {
+    font-size: 20px;
+    margin-top: 10px;
+}
