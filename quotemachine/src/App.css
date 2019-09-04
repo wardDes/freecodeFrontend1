@@ -15,7 +15,7 @@ body {
   height: 100vh;
 }
 
-#wrapper{
+.wrapper{
   border: 1px solid blue;
   margin: auto 0;
   text-align:center;
