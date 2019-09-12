@@ -70,6 +70,10 @@ body {
     margin-left: 240px;
 }
 
+#bend button {
+    color: white;
+}
+
 #new-quote {
     font-size: 20px;
     margin-top: 10px;
