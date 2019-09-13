@@ -40,6 +40,12 @@ export class DisplayQuoteAuthors extends React.Component {
         this.setState({quoteObj: this.state.quotes[0][Math.floor(Math.random() * this.state.quotes[0].length)]});
     }
 
+    getBodyElement(){
+        let bodyBg = document.querySelector('body')
+        bodyBg.style.background = this.state.color;
+        bodyBg.style.borderColor = this.state.color;
+    }
+
     buildQuotes = (data) =>{
         this.setState({quotes: [].concat(Object.values(data))});
         this.setState({quoteObj: this.state.quotes[0][Math.floor(Math.random() * this.state.quotes[0].length)]});
