@@ -78,10 +78,10 @@ export class DisplayQuoteAuthors extends React.Component {
                         </div>
                         <div className="buttons">
                             <div id="bstart">
-                                <a className="button" style={{color: color}} href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=somequote" id="tweet-quote" title="Tweet this quote!" target="_blank" rel="noopener noreferrer">
+                            <a className="button" style={{color: color}} href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${this.state.quoteObj.quote}" ${this.state.quoteObj.author}`}  id="tweet-quote" title="Tweet this quote!" target="_blank" rel="noopener noreferrer">
                                     <i className="fa fa-twitter"></i>
                                 </a>
-                                <a className="button" style={{color: color}} href="https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=currentAuthor&content=currentQuote&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button" id="tumblr-quote" title="Post this quote on tumblr!" target="_blank" rel="noopener noreferrer">
+                                <a className="button" style={{color: color}} href={`https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=${this.state.quoteObj.author}&content=${this.state.quoteObj.quote}&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button"`} id="tumblr-quote" title="Post this quote on tumblr!" target="_blank" rel="noopener noreferrer">
                                     <i className="fa fa-tumblr"></i>
                                 </a>
                             </div>
