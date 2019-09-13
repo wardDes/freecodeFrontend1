@@ -70,7 +70,7 @@ export class DisplayQuoteAuthors extends React.Component {
                                 </a>
                             </div>
                             <div id="bend">
-                                <button className="button" style={{backgroundColor: color, color:"#FFF"}} id="new-quote">new quote</button>
+                                <button className="button" style={{backgroundColor: color, color:"#FFF"}} id="new-quote" onClick= {this.handleClick}>new quote</button>
                             </div>
                         </div>
                       </div>
