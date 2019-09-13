@@ -2,17 +2,25 @@ import React from 'react';
 import '../App.css';
 
 
+
 export class DisplayQuoteAuthors extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            quotes: []
+            quotes: [],
         }
     }
 
+    
     componentDidMount(){
-
+        console.log('didmount');
+        const url = 'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json';
+        fetch(url)
+        .then(response => response.json())
+        .then(this.buildQuotes)
+        .catch(err => console.log(err))
     }
+
 
     render(){
         return(
@@ -36,7 +44,7 @@ export class DisplayQuoteAuthors extends React.Component {
                                 </a>
                             </div>
                             <div id="bend">
-                                <button className="button" id="new-quote">New quote</button>
+                                <button className="button" id="new-quote">new quote</button>
                             </div>
                         </div>
                       </div>
