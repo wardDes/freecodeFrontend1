@@ -13,6 +13,11 @@ export class DisplayQuoteAuthors extends React.Component {
         }
     }
 
+    handleClick(){
+        this.changeColor();
+        this.changeQuote()
+    }
+
     changeColor(){
         let color1  = Math.floor(Math.random() * 256 + 1).toString(16);
         let color2 =  Math.floor(Math.random() * 256 + 1).toString(16);
