@@ -48,6 +48,7 @@ export class DisplayQuoteAuthors extends React.Component {
 
 
     render(){
+        const color = this.state.color;
         return(
             <div>
                 <div>
