@@ -8,9 +8,14 @@ export class DisplayQuoteAuthors extends React.Component {
         super(props);
         this.state = {
             quotes: [],
+            quoteObj: {}
         }
     }
 
+    buildQuotes = (data) =>{
+        this.setState({quotes: [].concat(Object.values(data))});
+        this.setState({quoteObj: this.state.quotes[0][Math.floor(Math.random() * this.state.quotes[0].length)]});
+    }
     
     componentDidMount(){
         console.log('didmount');
