@@ -12,6 +12,10 @@ export class DisplayQuoteAuthors extends React.Component {
         }
     }
 
+    changeQuote(){
+        this.setState({quoteObj: this.state.quotes[0][Math.floor(Math.random() * this.state.quotes[0].length)]});
+    }
+
     buildQuotes = (data) =>{
         this.setState({quotes: [].concat(Object.values(data))});
         this.setState({quoteObj: this.state.quotes[0][Math.floor(Math.random() * this.state.quotes[0].length)]});
