@@ -8,8 +8,24 @@ export class DisplayQuoteAuthors extends React.Component {
         super(props);
         this.state = {
             quotes: [],
-            quoteObj: {}
+            quoteObj: {},
+            color: '#00F'
         }
+    }
+
+    changeColor(){
+        let color1  = Math.floor(Math.random() * 256 + 1).toString(16);
+        let color2 =  Math.floor(Math.random() * 256 + 1).toString(16);
+        let color3 =  Math.floor(Math.random() * 256 + 1).toString(16);
+        if(color1.length < 2){
+            color1 = "0"+ color1;
+        }else if (color2.length < 2){
+            color2 = "0" + color2;
+        }else if(color3.length < 2){
+            color3 = "0" + color3;
+        }
+        let color = "#" + color1 + color2 + color3;
+        this.setState({color: color});
     }
 
     changeQuote(){
