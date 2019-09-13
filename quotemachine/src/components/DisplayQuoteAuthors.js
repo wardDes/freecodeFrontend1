@@ -55,7 +55,7 @@ export class DisplayQuoteAuthors extends React.Component {
                     <div className="wrapper" style={{color: color}}> 
                       <div id="quote-box">
                         <div className="quote-text">
-                            <i className="fa fa-quote-left"> </i><span id="text"></span>
+                            <i className="fa fa-quote-left"> </i><span id="text">{this.state.quoteObj.quote}</span>
                         </div>
                         <div className="quote-author">
                             - <span id="author"></span>
