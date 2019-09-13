@@ -14,6 +14,7 @@ export class DisplayQuoteAuthors extends React.Component {
         this.handleClick = this.handleClick.bind(this);
         this.changeColor = this.changeColor.bind(this);
         this.changeQuote = this.changeQuote.bind(this);
+        this.getBodyElement = this.getBodyElement.bind(this);
     }
 
     handleClick(){
