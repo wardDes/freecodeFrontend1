@@ -58,7 +58,7 @@ export class DisplayQuoteAuthors extends React.Component {
                             <i className="fa fa-quote-left"> </i><span id="text">{this.state.quoteObj.quote}</span>
                         </div>
                         <div className="quote-author">
-                            - <span id="author"></span>
+                            - <span id="author">{this.state.quoteObj.author}</span>
                         </div>
                         <div className="buttons">
                             <div id="bstart">
